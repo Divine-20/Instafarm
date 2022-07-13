@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../images/logo.png'
-import {Faheart,FaAdjust} from 'react-icons/fa'
+import { Faheart } from 'react-icons/fa'
 function HeaderContent() {
   return (
     <div>
