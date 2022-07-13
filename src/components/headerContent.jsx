@@ -31,14 +31,16 @@ function HeaderContent() {
     </div>
            <i className='pt-12 text-3xl pl-[5%]'><FaRegHeart /></i><span className='pt-14 pl-2'>Wishlist</span>
            <i className='pt-12 text-3xl pl-[5%]'><FaShoppingCart /></i><span><h1 className='pt-10 pl-4'>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
-           <i className='pt-12 pl-2 text-2xl '><FaAngleDown /></i>
+           <i className='pt-14 pl-4 text-2xl '><FaAngleDown /></i>
            
-            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-6 ml-20 '/>
-            <p className='pt-12 pl-4'>Apple Red</p> 
-            <i className='pt-[1.8em] pl-4 text-2xl'><FaAngleDown /></i>
+            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-8 ml-20 '/>
+            <p className='pt-14 pl-4'>Apple Red</p> 
+            <i className='pt-[2.3em] pl-4 text-2xl'><FaAngleDown /></i>
 
         </nav>
+        
     </div>
+
   )
 }
 
