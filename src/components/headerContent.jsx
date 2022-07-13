@@ -29,8 +29,8 @@ function HeaderContent() {
          
     </form>
     </div>
-           <i className='pt-6 text-3xl'><FaRegHeart /></i>
-           <i className='pt-6 text-3xl'><FaShoppingCart /></i>
+           <i className='pt-12 text-3xl pl-[5%]'><FaRegHeart /></i><span className='pt-14 pl-2'>Wishlist</span>
+           <i className='pt-12 text-3xl pl-[5%]'><FaShoppingCart /></i><span><h1>Cart</h1><p>$10</p></span>
            
             <img src={image} alt="profile" className='rounded-full w-20 h-20'/>
             <p className='pt-8'>Apple Red</p>
