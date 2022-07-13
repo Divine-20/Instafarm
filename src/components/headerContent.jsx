@@ -2,7 +2,9 @@ import React from 'react'
 
 function HeaderContent() {
   return (
-    <div>Header content</div>
+    <div>
+        <h1 className=''>heading</h1>
+    </div>
   )
 }
 

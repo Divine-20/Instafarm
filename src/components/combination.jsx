@@ -1,8 +1,11 @@
 import React from 'react'
+import HeaderContent from './headerContent'
 
 function Combination() {
   return (
-    <div>Cskhfsks</div>
+    <div>
+        <HeaderContent />
+    </div>
   )
 }
 
