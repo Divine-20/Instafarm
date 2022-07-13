@@ -1,10 +1,11 @@
 import React from 'react'
 import logo from '../images/logo.png'
-import { Faheart } from 'react-icons/fa'
+import image from '../images/image.jpg'
+import { FaRegHeart,FaShoppingCart } from 'react-icons/fa'
 function HeaderContent() {
   return (
     <div>
-        <nav className='flex'>
+        <nav className='flex h-20'>
             <div className='flex'>
           <img src={logo} alt = "logo" />
 <div className='block'>
@@ -21,7 +22,9 @@ function HeaderContent() {
         </select>
          <input type="search" placeholder='Search for items'/>
     </form>
-           <i><Faheart /></i>
+           <i><FaRegHeart /></i>
+           <i><FaShoppingCart /></i>
+            <img src={image} alt="profile" />
         </nav>
     </div>
   )
