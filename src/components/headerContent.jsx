@@ -1,11 +1,11 @@
 import React from 'react'
 import logo from '../images/logo.png'
 import image from '../images/image.jpg'
-import { FaRegHeart,FaShoppingCart,FaCaretDown,FaSearch } from 'react-icons/fa'
+import { FaRegHeart,FaShoppingCart,FaAngleDown,FaSearch } from 'react-icons/fa'
 function HeaderContent() {
   return (
     <div>
-        <nav className='flex h-20 '>
+        <nav className='flex h-auto pb-8 border-b-[1px]  '>
             <div className='flex ml-10 mt-4'>
           <img src={logo} alt = "logo"  className='h-20'/>
 <div className='block'>
@@ -14,7 +14,7 @@ function HeaderContent() {
 </div>
 
 </div>  
-<div className='mt-6 bg-[#F3F3F3] ml-20 h-20 w-auto pr-5 ' >
+<div className='mt-6 bg-[#F3F3F3] ml-32 h-20 w-auto pr-5 ' >
     <form action="" className='flex pt-4 '>
         <select name="" id="" className='w-44 ml-4  pl-4'>
             <option value="All categories">All categories</option>
@@ -30,11 +30,12 @@ function HeaderContent() {
     </form>
     </div>
            <i className='pt-12 text-3xl pl-[5%]'><FaRegHeart /></i><span className='pt-14 pl-2'>Wishlist</span>
-           <i className='pt-12 text-3xl pl-[5%]'><FaShoppingCart /></i><span><h1>Cart</h1><p>$10</p></span>
+           <i className='pt-12 text-3xl pl-[5%]'><FaShoppingCart /></i><span><h1 className='pt-10 pl-4'>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
+           <i className='pt-12 pl-2 text-2xl '><FaAngleDown /></i>
            
-            <img src={image} alt="profile" className='rounded-full w-20 h-20'/>
-            <p className='pt-8'>Apple Red</p>
-            <i className='pt-8 text-2xl'><FaCaretDown /></i>
+            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-6 ml-20 '/>
+            <p className='pt-12 pl-4'>Apple Red</p> 
+            <i className='pt-[1.8em] pl-4 text-2xl'><FaAngleDown /></i>
 
         </nav>
     </div>
