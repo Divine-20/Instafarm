@@ -38,7 +38,7 @@ function HeaderContent() {
             <i className='pt-[2.8em] pl-2 text-xl'><FaAngleDown /></i>
 
         </nav>
-        <div className='flex ml-32 '>
+        <div className='flex ml-32 pb-6'>
             <ul className='flex mt-4'>
           <li><button className='bg-[#3BB77E] w-auto pr-5 h-14 flex pt-5 pl-4 text-white '><i className='pr-4 text-xl text-white'><FaThLarge /></i>Brows All Categories</button></li>
           <li className='pl-52 flex mt-6 '><i className='pr-4'><FaHome /></i>Home</li>
