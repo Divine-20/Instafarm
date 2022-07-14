@@ -15,8 +15,9 @@ function Categories() {
         <div className='flex'>
             <h1 className='text-2xl text-[#253D4E] pl-32 pt-16'>Explore Categories</h1>
         </div>
+        <i className='text-4xl text-gray-200'><FaArrowCircleLeft /></i>
         <div className='flex ml-32 mt-8'>
-            <i><FaArrowCircleLeft /></i>
+            
             <div className='auto pb-6 w-52 bg-[#FEEFEA] '>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
@@ -51,8 +52,9 @@ function Categories() {
             <img src={carrots} alt="carrots" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
-              <i><FaArrowCircleRight /></i>
+              
             </div>
+            <i className='text-4xl text-gray-200' ><FaArrowCircleRight /></i>
         </div>
     </div>
   )
