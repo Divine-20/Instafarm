@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../images/logo.png'
 import image from '../images/image.jpg'
-import { FaRegHeart,FaShoppingCart,FaAngleDown,FaSearch,FaThLarge } from 'react-icons/fa'
+import { FaRegHeart,FaShoppingCart,FaAngleDown,FaSearch,FaThLarge,FaHome,FaFire,FaPercentage,FaRegBell,FaPhone } from 'react-icons/fa'
 function HeaderContent() {
   return (
     <div>
@@ -39,7 +39,14 @@ function HeaderContent() {
 
         </nav>
         <div className='flex'>
-          <button className='bg-[#3BB77E] w-20 h-10'><i><FaThLarge /></i></button>
+            <ul>
+          <li><button className='bg-[#3BB77E] w-auto pr-5 h-14 flex pt-5 pl-4 text-white'><i className='pr-4 text-xl text-white'><FaThLarge /></i>Brows All Categories</button></li>
+          <li><FaHome />Home</li>
+          <li><FaFire />Hot deals</li>
+          <li><FaPercentage />Promotions</li>
+          <li><FaRegBell />New products</li>
+          <li><FaPhone />1233-7777 <span>24/7 support center</span></li>
+          </ul>
         </div>
     </div>
 
