@@ -59,9 +59,10 @@ function Categories(props) {
             </div>
             <i className='text-4xl text-gray-200' ><FaArrowCircleRight /></i>
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center mt-6'>
+            
         {featured.map(features=>(
-     <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-400'>
+     <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200'>
           <img src={features.src} alt="reddish" />
           <p className='text-xs pl-8 text-[#D4D4D4]'>{features.type}</p>
           <h1 className='pl-8 pt-2'>{features.name}</h1>

@@ -48,7 +48,7 @@ function CategoriesContent() {
   amount:"$3.99"
   
 },{
-  src: tomatoes,
+  src: tomatoes ,
   type:"vegetables",
   name:"Reddish 500g",
   owner:"Mr.food",
