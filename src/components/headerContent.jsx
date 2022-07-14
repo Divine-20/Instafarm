@@ -5,7 +5,7 @@ import { FaRegHeart,FaShoppingCart,FaAngleDown,FaSearch,FaThLarge,FaHome,FaFire,
 function HeaderContent() {
   return (
     <div>
-        <nav className='flex h-auto pb-8 border-b-[1px]  '>
+        <nav className='flex h-auto pb-8 border-b-[1px] ml-20 '>
             <div className='flex ml-10 mt-4'>
           <img src={logo} alt = "logo"  className='h-20'/>
 <div className='block'>
@@ -29,23 +29,23 @@ function HeaderContent() {
          
     </form>
     </div>
-           <i className='pt-12 text-3xl pl-[5%]'><FaRegHeart /></i><span className='pt-14 pl-2'>Wishlist</span>
-           <i className='pt-12 text-3xl pl-[5%]'><FaShoppingCart /></i><span><h1 className='pt-10 pl-4'>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
-           <i className='pt-14 pl-4 text-2xl '><FaAngleDown /></i>
+           <i className='pt-14 text-xl pl-[3%]'><FaRegHeart /></i><span className='pt-14 pl-2'>Wishlist</span>
+           <i className='pt-14 text-xl pl-[3%]'><FaShoppingCart /></i><span><h1 className='pt-12 pl-4'>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
+           <i className='pt-16 pl-4 text-xl '><FaAngleDown /></i>
            
-            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-8 ml-20 '/>
+            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-8 ml-14 '/>
             <p className='pt-14 pl-4'>Apple Red</p> 
-            <i className='pt-[2.3em] pl-4 text-2xl'><FaAngleDown /></i>
+            <i className='pt-[2.8em] pl-2 text-xl'><FaAngleDown /></i>
 
         </nav>
-        <div className='flex'>
-            <ul>
-          <li><button className='bg-[#3BB77E] w-auto pr-5 h-14 flex pt-5 pl-4 text-white'><i className='pr-4 text-xl text-white'><FaThLarge /></i>Brows All Categories</button></li>
-          <li><FaHome />Home</li>
-          <li><FaFire />Hot deals</li>
-          <li><FaPercentage />Promotions</li>
-          <li><FaRegBell />New products</li>
-          <li><FaPhone />1233-7777 <span>24/7 support center</span></li>
+        <div className='flex ml-32 '>
+            <ul className='flex mt-4'>
+          <li><button className='bg-[#3BB77E] w-auto pr-5 h-14 flex pt-5 pl-4 text-white '><i className='pr-4 text-xl text-white'><FaThLarge /></i>Brows All Categories</button></li>
+          <li className='pl-52 flex mt-6 '><i className='pr-4'><FaHome /></i>Home</li>
+          <li className='pl-16 flex mt-6'><i className='pr-4'><FaFire /></i>Hot deals</li>
+          <li className='pl-16 flex mt-6'><i className='pr-4'><FaPercentage /></i>Promotions</li>
+          <li className='pl-16 flex mt-6'><i className='pr-4'><FaRegBell /></i>New products</li>
+          <li className='pl-[10rem] flex mt-6'><i className='pr-4'><FaPhone /></i>1233-7777 <span>24/7 support center</span></li>
           </ul>
         </div>
     </div>
