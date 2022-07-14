@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaArrowCircleLeft,FaArrowCircleRight } from 'react-icons/fa'
+
 import peaches from '../images/peaches.png'
 import cabbage from '../images/cabbage.png'
 import strawberry from '../images/strawberry.png'
@@ -14,6 +16,7 @@ function Categories() {
             <h1 className='text-2xl text-[#253D4E] pl-32 pt-16'>Explore Categories</h1>
         </div>
         <div className='flex ml-32 mt-8'>
+            <i><FaArrowCircleLeft /></i>
             <div className='auto pb-6 w-52 bg-[#FEEFEA] '>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
@@ -21,7 +24,7 @@ function Categories() {
             </div>
             <div className='auto pb-6 w-52 bg-[#FFF3FF] ml-8'>
             <img src={cabbage} alt="cabbage" className='mt-8' />
-            <h1 className='text-center placeholder-violet-100 '>Peach</h1>
+            <h1 className='text-center placeholder-violet-100 pt-10 '>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
             <div className='auto pb-6 w-52 bg-[#F2FCE4] ml-8'>
@@ -48,6 +51,7 @@ function Categories() {
             <img src={carrots} alt="carrots" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
+              <i><FaArrowCircleRight /></i>
             </div>
         </div>
     </div>
