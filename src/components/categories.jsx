@@ -59,9 +59,9 @@ function Categories(props) {
             </div>
             <i className='text-4xl text-gray-200' ><FaArrowCircleRight /></i>
         </div>
-        <div className='flex justify-evenly'>
+        <div className='flex justify-center'>
         {featured.map(features=>(
-     <div className='h-auto pb-8 w-64  mt-10 border-solid border-[1px] border-gray-400'>
+     <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-400'>
           <img src={features.src} alt="reddish" />
           <p className='text-xs pl-8 text-[#D4D4D4]'>{features.type}</p>
           <h1 className='pl-8 pt-2'>{features.name}</h1>
@@ -73,7 +73,7 @@ function Categories(props) {
           <i className='text-[#D4D4D4]'><FaStar /></i>
           <p className=' text-[#D4D4D4] text-xs'>(4)</p>
          </div>
-         <p className='text-sm pt-4 pl-8 '>By <span className='text-sm text-[#3BB77E]'>{features.owner}</span></p>
+         <p className='text-sm pt-4 pl-8  '>By <span className='text-sm text-[#3BB77E]'>{features.owner}</span></p>
          <div className='flex justify-center'>
          <p className='text-[#3BB77E] pr-6 pt-4'>{features.dollars}<span className='text-[#D4D4D4] line-through'>{features.amount}</span></p>
          <button className='text-[#3BB77E] flex h-10 mt-2 pt-3 w-auto pl-4 pr-4 bg-[#DEF9EC]'><i className='text-[#3BB77E] pr-4'><FaShoppingCart /></i>Add</button>

@@ -40,6 +40,14 @@ function CategoriesContent() {
   owner:"Mr.food",
   dollars:"$2",
   amount:"$3.99"
+  
+},{
+  src: "",
+  type:"vegetables",
+  name:"Reddish 500g",
+  owner:"Mr.food",
+  dollars:"$2",
+  amount:"$3.99"
   }
 ]
   return (
