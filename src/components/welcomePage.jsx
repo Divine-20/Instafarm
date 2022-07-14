@@ -5,8 +5,8 @@ import { FaPaperPlane} from 'react-icons/fa'
 
 function WelcomePage() {
   return (
-    <div className="  h-[75vh] w-full" style={{backgroundImage:`url(${Rectangle1})`}}>
-        <div className='h-[75vh] w-[95%] bg-[#C5EAD9] float-right opacity-90'>
+    <div className="  h-[78vh] w-full" style={{backgroundImage:`url(${Rectangle1})`}}>
+        <div className='h-auto pb-8 w-[95%] bg-[#C5EAD9] float-right opacity-90'>
           <img src={HreoImg} alt="hreoimg" className='h-[75vh] float-right' />
           <h1 className='text-7xl pl-8 mt-52 text-[#253D4E]'>Don't miss our daily amazing deals.</h1>
           <p className='pl-10 pt-12 text-[#838383] text-2xl'>Save up to 60% off on your first order</p>
