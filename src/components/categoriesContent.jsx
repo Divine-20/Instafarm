@@ -1,25 +1,31 @@
 import React from 'react'
 import Categories from './categories';
+import reddish from '../images/reddish.png'
+import potatoes from '../images/potatoes.png'
+// import carrots from '../images/carrots.png'
 
+import cabbage from '../images/cabbage.png'
+import beans from '../images/beans.png'
+import tomatoes from '../images/tomatoes.png'
 
 function CategoriesContent() {
 
   const featured = [{
-    src: "",
+    src: reddish,
     type:"vegetables",
     name:"Reddish 500g",
     owner:"Mr.food",
     dollars:"$2",
     amount:"$3.99"
   },{
-  src: "",
+  src: potatoes,
   type:"vegetables",
   name:"Reddish 500g",
   owner:"Mr.food",
   dollars:"$2",
   amount:"$3.99"
   },{
-  src: "",
+  src: tomatoes,
   type:"vegetables",
   name:"Reddish 500g",
   owner:"Mr.food",
@@ -27,14 +33,14 @@ function CategoriesContent() {
   amount:"$3.99"
   
 },{
-  src: "",
+  src: cabbage,
   type:"vegetables",
   name:"Reddish 500g",
   owner:"Mr.food",
   dollars:"$2",
   amount:"$3.99"
   },{
-  src: "",
+  src: beans,
   type:"vegetables",
   name:"Reddish 500g",
   owner:"Mr.food",
@@ -42,7 +48,7 @@ function CategoriesContent() {
   amount:"$3.99"
   
 },{
-  src: "",
+  src: tomatoes,
   type:"vegetables",
   name:"Reddish 500g",
   owner:"Mr.food",
