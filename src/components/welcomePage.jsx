@@ -4,8 +4,8 @@ import HreoImg from '../images/HreoImg.png'
 import { FaPaperPlane} from 'react-icons/fa'
 
 function WelcomePage() {
-  return (
-    <div className="  h-[78vh] w-full" style={{backgroundImage:`url(${Rectangle1})`}}>
+  return ( <div className="  h-[78vh] w-full" style={{backgroundImage:`url(${Rectangle1})`}}>
+   
         <div className='h-auto pb-8 w-[95%] bg-[#C5EAD9] float-right opacity-90'>
           <img src={HreoImg} alt="hreoimg" className='h-[75vh] float-right' />
           <h1 className='text-7xl pl-8 mt-52 text-[#253D4E]'>Don't miss our daily amazing deals.</h1>
