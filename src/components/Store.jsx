@@ -10,8 +10,8 @@ import svgexport3 from '../images/svgexport3.png'
 function Store() {
   return (
       <div>
-    <div className=" mt-24 h-[110vh] w-full" style={{backgroundImage:`url(${Rectangle1})`}}>
-    <div className='h-[110vh] pb-8 w-full bg-[#C5EAD9] opacity-90'>
+    <div className=" mt-24 h-[120vh] w-full" style={{backgroundImage:`url(${Rectangle1})`}}>
+    <div className='h-[120vh] pb-8 w-full bg-[#C5EAD9] opacity-90'>
         <div className='flex'>
             <div className='block ml-32 mt-[20%]'>
         <div className=''>
