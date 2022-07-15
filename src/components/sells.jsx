@@ -2,7 +2,8 @@ import React from 'react'
 import {FaArrowCircleLeft,FaArrowCircleRight} from 'react-icons/fa'
 import  flour from '../images/flour.png'
 
-function Sells() {
+function Sells(props) {
+    const {sells} = props;
   return (
     <div>
         <div className='flex ml-36 mt-24'>
@@ -21,11 +22,12 @@ function Sells() {
           </div>
         </div>
         <div>
-            <div>
+            {sells.map(sell=>(
+           <div>
                 <button>Save</button>
-                <img src={flour} alt="flour" />
-                <p className='text-xs pl-8 text-[#D4D4D4]'>{features.type}</p>
-          <h1 className='pl-8 pt-2'>{features.name}</h1>
+                <img src={sell.src} alt="flour" />
+                <p className='text-xs pl-8 text-[#D4D4D4]'>{sell.type}</p>
+          <h1 className='pl-8 pt-2'>{sell.name}</h1>
           <div className='flex pl-8 pt-4'>
           <i className='text-[#FDC040]'><FaStar /></i>
           <i className='text-[#FDC040]'><FaStar /></i>
@@ -34,12 +36,14 @@ function Sells() {
           <i className='text-[#D4D4D4]'><FaStar /></i>
           <p className=' text-[#D4D4D4] text-xs'>(4)</p>
          </div>
-         <p className='text-sm pt-4 pl-8  '>By <span className='text-sm text-[#3BB77E]'>{features.owner}</span></p>
+         <p className='text-sm pt-4 pl-8  '>By <span className='text-sm text-[#3BB77E]'>{sell.owner}</span></p>
          <div className='flex justify-center'>
-         <p className='text-[#3BB77E] pr-6 pt-4'>{features.dollars}<span className='text-[#D4D4D4] line-through'>{features.amount}</span></p>
+         <p className='text-[#3BB77E] pr-6 pt-4'>{features.dollars}<span className='text-[#D4D4D4] line-through'>{sell.amount}</span></p>
 
             </div>
         </div>
+        ))}
+    </div>
     </div>
   )
 }
