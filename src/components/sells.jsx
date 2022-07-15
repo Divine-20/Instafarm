@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaArrowCircleLeft,FaArrowCircleRight} from 'react-icons/fa'
+import {FaArrowCircleLeft,FaArrowCircleRight,FaStar} from 'react-icons/fa'
 import  flour from '../images/flour.png'
 
 function Sells(props) {
@@ -24,7 +24,7 @@ function Sells(props) {
         <div>
             {sells.map(sell=>(
            <div>
-                <button>Save</button>
+                <button>{sell.action}</button>
                 <img src={sell.src} alt="flour" />
                 <p className='text-xs pl-8 text-[#D4D4D4]'>{sell.type}</p>
           <h1 className='pl-8 pt-2'>{sell.name}</h1>
@@ -38,7 +38,7 @@ function Sells(props) {
          </div>
          <p className='text-sm pt-4 pl-8  '>By <span className='text-sm text-[#3BB77E]'>{sell.owner}</span></p>
          <div className='flex justify-center'>
-         <p className='text-[#3BB77E] pr-6 pt-4'>{features.dollars}<span className='text-[#D4D4D4] line-through'>{sell.amount}</span></p>
+         <p className='text-[#3BB77E] pr-6 pt-4'>{sell.dollars}<span className='text-[#D4D4D4] line-through'>{sell.amount}</span></p>
 
             </div>
         </div>
