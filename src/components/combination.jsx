@@ -7,6 +7,8 @@ import Deliveries from './deliveries'
 import TopMeals from './topMeals'
 import Store from './Store'
 import Footer from './footer'
+// import sellsContent from './sellsContent'
+import Sells from './sells'
 
 function Combination() {
   return (
@@ -15,6 +17,7 @@ function Combination() {
         <WelcomePage />
         <CategoriesContent />
         <Deliveries />
+        <Sells />
         <TopMeals />
         <Store />
         <Footer />
