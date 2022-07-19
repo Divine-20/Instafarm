@@ -22,8 +22,8 @@ function Sells(props) {
           <i className='text-4xl text-[#F2F3F4]'><FaArrowCircleRight /></i>
         </div>
       </div>
-      <div className='flex justify-evenly'>
-        <div className='flex justify-evenly mt-10'>
+      <div className='flex justify-evenly mt-10'>
+        {/* <div className='flex justify-evenly mt-10'> */}
           {sells.map(sell => (
             <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200 '>
               <button className='bg-[#FFD480] text-white w-auto pl-2 pr-2 h-8'>{sell.action}</button>
@@ -43,7 +43,7 @@ function Sells(props) {
               <p className='text-[#3BB77E] pl-8 pr-6 pt-4 '>{sell.dollars}<span className='text-[#D4D4D4] line-through pl-4'>{sell.amount}</span></p>
               <div className='block'>
                 <form action="" className='ml-8'>
-                  <input type="range" className='text-green' />
+                  <input type="range" className='' />
 
                 </form>
                 <div className='ml-8'>
@@ -53,19 +53,23 @@ function Sells(props) {
               </div>
             </div>
           ))}
-        </div>
+        
 
-        <div className="  h-auto w-64" style={{ backgroundImage: `url(${Rectangle1})` }}>
-          <div className='bg-[#FFF7E6] h-auto w-64'>
-            <h1>10% off</h1>
-            <p>For a new member sign up for the first time</p>
-            <form action="">
-              <label htmlFor="">Email address</label>
+        <div className="  h-[62vh] mt-10 w-64" style={{ backgroundImage: `url(${Rectangle1})` }}>
+          <div className='bg-[#FFF7E6] h-[62vh] w-80 opacity-80 '>
+            <h1 className='text-3xl text-center pt-8'>10% off</h1>
+            <p className='text-center pt-8'>For a new member sign up for the first time</p>
+            <form action="" className='ml-4 mt-12 block'>
+              <label htmlFor="">Email address <span className='text-[#EB5757]' >*</span></label>
+              <input type="text" placeholder='jondoe@gmail.com' className='h-10 w-72 pl-4 mt-4 mb-8'/>
+              <label htmlFor="" className=''>Password <span className='text-[#EB5757]'>*</span></label>
+              <input type="password" placeholder='Maximum 8 characters' className='h-10 w-72 pl-4 mt-4'/>
+              <button className=' bg-[#3BB77E] text-white  mt-4 h-10 w-72'>Register Now</button>
             </form>
           </div>
-         
           </div>
-        </div>
+          </div>
+        {/* </div> */}
         </div>
         
         )
