@@ -43,7 +43,7 @@ function Sells(props) {
               <p className='text-[#3BB77E] pl-8 pr-6 pt-4 '>{sell.dollars}<span className='text-[#D4D4D4] line-through pl-4'>{sell.amount}</span></p>
               <div className='block'>
                 <form action="" className='ml-8'>
-                  <input type="range" className='' />
+                  <input type="range" className='w-48 bg-[#3BB77E] appearance-none rounded-lg h-2' />
 
                 </form>
                 <div className='ml-8'>
