@@ -61,7 +61,7 @@ function Categories(props) {
             <i className='text-4xl text-gray-200 mt-28 ml-4 ' ><FaArrowCircleRight /></i>
         </div>
         <div className='flex justify-center mt-6'>
-            
+        <i className='text-4xl text-gray-200 pr-4 pt-48'><FaArrowCircleLeft /></i>
         {featured.map(features=>(
      <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200'>
           <img src={features.src} alt="reddish" />
@@ -83,6 +83,7 @@ function Categories(props) {
          </div>
         
         ))}
+         <i className='text-4xl text-gray-200 mt-48  ' ><FaArrowCircleRight /></i>
         </div>
     </div>
   )
