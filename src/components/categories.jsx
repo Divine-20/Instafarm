@@ -17,10 +17,11 @@ function Categories(props) {
     <div>
         <div className='flex'>
             <h1 className='text-2xl text-[#253D4E] pl-32 pt-16'>Explore Categories</h1>
+          
         </div>
-        <i className='text-4xl text-gray-200'><FaArrowCircleLeft /></i>
-        <div className='flex ml-32 mt-8'>
-            
+       
+        <div className='flex ml-16  mt-8'>
+        <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
             <div className='auto pb-6 w-52 bg-[#FEEFEA] '>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
@@ -57,7 +58,7 @@ function Categories(props) {
               <p className='text-center'>20 items</p>
               
             </div>
-            <i className='text-4xl text-gray-200' ><FaArrowCircleRight /></i>
+            <i className='text-4xl text-gray-200 mt-28 ml-4 ' ><FaArrowCircleRight /></i>
         </div>
         <div className='flex justify-center mt-6'>
             
