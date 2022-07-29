@@ -2,12 +2,9 @@ import React from 'react'
 import logo from '../images/logo.png'
 import image from '../images/image.jpg'
 import { FaRegHeart,FaShoppingCart,FaAngleDown,FaSearch,FaThLarge,FaHome,FaFire,FaPercentage,FaRegBell,FaPhone } from 'react-icons/fa'
-import Slider from 'react-slick'
+
 function HeaderContent() {
-  const settings ={
-    dots:true,
-    
-  }
+
   return (
     <div>
         <nav className='flex h-auto pb-8 border-b-[1px]  w-full justify-evenly'>
