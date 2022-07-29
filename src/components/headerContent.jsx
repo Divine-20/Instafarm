@@ -5,7 +5,7 @@ import { FaRegHeart,FaShoppingCart,FaAngleDown,FaSearch,FaThLarge,FaHome,FaFire,
 function HeaderContent() {
   return (
     <div>
-        <nav className='flex h-auto pb-8 border-b-[1px] ml-20 '>
+        <nav className='flex h-auto pb-8 border-b-[1px]  w-full justify-evenly'>
             <div className='flex ml-10 mt-4'>
           <img src={logo} alt = "logo"  className='h-20'/>
 <div className='block'>
@@ -16,7 +16,7 @@ function HeaderContent() {
 </div>  
 <div className='mt-6 bg-[#F3F3F3] ml-32 h-20 w-auto pr-5 ' >
     <form action="" className='flex pt-4 '>
-        <select name="" id="" className='w-44 ml-4  pl-4'>
+        <select name="" id="" className='w-44 ml-4  pl-4 w-'>
             <option value="All categories">All categories</option>
             <option value="fruits">Fruits</option>
             <option value="vegetables">Vegetables</option>
@@ -29,16 +29,17 @@ function HeaderContent() {
          
     </form>
     </div>
-           <i className='pt-14 text-xl pl-[3%]'><FaRegHeart /></i><span className='pt-14 pl-2'>Wishlist</span>
-           <i className='pt-14 text-xl pl-[3%]'><FaShoppingCart /></i><span><h1 className='pt-12 pl-4'>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
+    <div className='flex justify-around'>
+           <i className='pt-14 text-xl '><FaRegHeart /></i><span className='pt-14'>Wishlist</span>
+           <i className='pt-14 text-xl'><FaShoppingCart /></i><span><h1 className='pt-12 '>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
            <i className='pt-16 pl-4 text-xl '><FaAngleDown /></i>
            
-            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-8 ml-14 '/>
-            <p className='pt-14 pl-4'>Apple Red</p> 
-            <i className='pt-[2.8em] pl-2 text-xl'><FaAngleDown /></i>
-
+            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-8 '/>
+            <p className='pt-14 '>Apple Red</p> 
+            <i className='pt-[2.8em] text-xl'><FaAngleDown /></i>
+            </div>
         </nav>
-        <div className='flex ml-32 pb-6'>
+        <div className='flex pb-6 w-full pl-16'>
             <ul className='flex mt-4'>
           <li><button className='bg-[#3BB77E] w-auto pr-5 h-14 flex pt-5 pl-4 text-white '><i className='pr-4 text-xl text-white'><FaThLarge /></i>Brows All Categories</button></li>
           <li className='pl-52 flex mt-6 '><i className='pr-4'><FaHome /></i>Home</li>
