@@ -31,7 +31,7 @@ function HeaderContent() {
          
     </form>
     </div>
-    <div className='flex justify-around'>
+    <div className='flex pr-6'>
            <i className='pt-14 text-xl '><FaRegHeart /></i><span className='pt-14'>Wishlist</span>
            <i className='pt-14 text-xl'><FaShoppingCart /></i><span><h1 className='pt-12 '>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
            <i className='pt-16 pl-4 text-xl '><FaAngleDown /></i>

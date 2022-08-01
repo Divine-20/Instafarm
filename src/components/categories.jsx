@@ -13,10 +13,10 @@ import reddish from '../images/reddish.png'
 
 function Categories(props) {
   const settings ={
-    dots:true,
+    dots: true,
     infinite:true,
     speed:500,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1
 
   }
@@ -28,6 +28,7 @@ function Categories(props) {
           
         </div>
        
+        <Slider {...settings}>
         <div className='flex ml-16  mt-8'>
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
             <div className='auto pb-6 w-52 bg-[#FEEFEA] '>
@@ -68,9 +69,11 @@ function Categories(props) {
             </div>
             <i className='text-4xl text-gray-200 mt-28 ml-4 ' ><FaArrowCircleRight /></i>
         </div>
+        </Slider>
+        
         <div className='flex justify-center mt-6'>
         <i className='text-4xl text-gray-200 pr-4 pt-48'><FaArrowCircleLeft /></i>
-        <Slider>
+        
         {featured.map(features=>(
      <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200'>
           <img src={features.src} alt="reddish" />
@@ -92,7 +95,7 @@ function Categories(props) {
          </div>
         
         ))}
-        </Slider>
+       
          <i className='text-4xl text-gray-200 mt-48  ' ><FaArrowCircleRight /></i>
         </div>
     </div>
