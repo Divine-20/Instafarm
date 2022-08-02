@@ -32,16 +32,16 @@ function HeaderContent() {
     </form>
     </div>
     <div className='flex '>
-           <i className='pt-14 text-xl '><FaRegHeart /></i><span className='pt-14'>Wishlist</span>
-           <i className='pt-14 text-xl'><FaShoppingCart /></i><span><h1 className='pt-12 '>Cart</h1><p className='pl-4 text-[#3BB77E] '>$10</p></span>
-           <i className='pt-16 pl-4 text-xl '><FaAngleDown /></i>
+           <i className='pt-14 text-xl pr-2'><FaRegHeart /></i><span className='pt-14 pr-6'>Wishlist</span>
+           <i className='pt-14 text-xl pr-2'><FaShoppingCart /></i><span><h1 className='pt-12'>Cart</h1><p className=' text-[#3BB77E] '>$10</p></span>
+           <i className='pt-16 pl-4 text-xl pr-6'><FaAngleDown /></i>
            
-            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-8 '/>
-            <p className='pt-14 '>Apple Red</p> 
+            <img src={image} alt="profile" className='rounded-full w-16 h-16 mt-8 mr-2'/>
+            <p className='pt-14 pr-2'>Apple Red</p> 
             <i className='pt-[2.8em] text-xl'><FaAngleDown /></i>
             </div>
         </nav>
-        <div className='flex pb-6 w-full pl-16'>
+        <div className='flex pb-6 w-full pl-16 ml-20'>
             <ul className='flex mt-4'>
           <li><button className='bg-[#3BB77E] w-auto pr-5 h-14 flex pt-5 pl-4 text-white '><i className='pr-4 text-xl text-white'><FaThLarge /></i>Brows All Categories</button></li>
           <li className='pl-52 flex mt-6 '><i className='pr-4'><FaHome /></i>Home</li>
