@@ -29,7 +29,7 @@ function Categories(props) {
         </div>
        
         
-        <div className=' ml-16  mt-8'>
+        {/* <div className=' ml-16  mt-8'> */}
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
         <Slider {...settings}>
             <div className='auto pb-6 w-52 bg-[#FEEFEA] '>
@@ -70,7 +70,7 @@ function Categories(props) {
             </div>
             </Slider>
             <i className='text-4xl text-gray-200 mt-28 ml-4 ' ><FaArrowCircleRight /></i>
-        </div>
+        {/* </div> */}
        
         
         <div className='flex justify-center mt-6'>
