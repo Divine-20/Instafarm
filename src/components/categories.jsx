@@ -32,12 +32,12 @@ function Categories(props) {
         {/* <div className=' ml-16  mt-8'> */}
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
         <Slider {...settings}>
-            <div className='auto pb-6 w-52 bg-[#FEEFEA] '>
+            <div className='auto pb-6 w-52 bg-[#FEEFEA] absolute'>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
               <p className='text-center '>20 items</p>
             </div>
-            <div className='auto pb-6 w-52 bg-[#FFF3FF] ml-8'>
+            <div className='auto pb-6 w-52 bg-[#FFF3FF] ml-8 absolute'>
             <img src={cabbage} alt="cabbage" className='mt-8' />
             <h1 className='text-center placeholder-violet-100 pt-10 '>Peach</h1>
               <p className='text-center'>20 items</p>
