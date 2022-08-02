@@ -28,9 +28,10 @@ function Categories(props) {
           
         </div>
        
-        <Slider {...settings}>
-        <div className='flex ml-16  mt-8'>
+        
+        <div className=' ml-16  mt-8'>
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
+        <Slider {...settings}>
             <div className='auto pb-6 w-52 bg-[#FEEFEA] '>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
@@ -67,9 +68,10 @@ function Categories(props) {
               <p className='text-center'>20 items</p>
               
             </div>
+            </Slider>
             <i className='text-4xl text-gray-200 mt-28 ml-4 ' ><FaArrowCircleRight /></i>
         </div>
-        </Slider>
+       
         
         <div className='flex justify-center mt-6'>
         <i className='text-4xl text-gray-200 pr-4 pt-48'><FaArrowCircleLeft /></i>
