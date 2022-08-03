@@ -32,37 +32,37 @@ function Categories(props) {
         <div className=' ml-16 flex mt-8'>
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
         
-            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] ml-8'>
+            <div className='h-auto pb-6 w-52 bg-[#FEEFEA]'>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
               <p className='text-center '>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#FFF3FF] '>
+            <div className='h-auto pb-6 w-52 bg-[#FFF3FF] ml-8'>
             <img src={cabbage} alt="cabbage" className='mt-8' />
             <h1 className='text-center placeholder-violet-100 pt-10 '>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#F2FCE4] '>
+            <div className='h-auto pb-6 w-52 bg-[#F2FCE4] ml-8'>
             <img src={strawberry} alt="strawberry" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] '>
+            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] ml-8'>
             <img src={apple} alt="apple" />
             <h1 className='text-center'>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#ECFFEC] '>
+            <div className='h-auto pb-6 w-52 bg-[#ECFFEC] ml-8'>
             <img src={oranges} alt="oranges" />
             <h1 className='text-center'>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#FFFCEB]'>
+            <div className='h-auto pb-6 w-52 bg-[#FFFCEB] ml-8'>
             <img src={irishpotatoes} alt="irishpotatoes" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#DEF9EC]'>
+            <div className='h-auto pb-6 w-52 bg-[#DEF9EC] ml-8'>
             <img src={carrots} alt="carrots" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
