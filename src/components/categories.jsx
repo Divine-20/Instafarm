@@ -18,6 +18,7 @@ function Categories(props) {
       translate:0,
       transition:0.45
     })
+    const {translate,transition} = state
   return (
     <div>
         <div className='flex '>
