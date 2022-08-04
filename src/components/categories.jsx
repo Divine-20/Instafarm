@@ -16,13 +16,13 @@ function Categories(props) {
     const {featured} = props;
   return (
     <div>
-        <div className='flex'>
+        <div className='flex '>
             <h1 className='text-2xl text-[#253D4E] pl-32 pt-16'>Explore Categories</h1>
           
         </div>
        
         
-        <div className=' ml-16 flex mt-8'>
+        <div className=' ml-16 flex mt-8 '>
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
         
             <div className='h-auto pb-6 w-52 bg-[#FEEFEA]'>
