@@ -22,7 +22,7 @@ function Sells(props) {
           <i className='text-4xl text-[#F2F3F4]'><FaArrowCircleRight /></i>
         </div>
       </div>
-      <div className='flex justify-evenly mt-10'>
+      <div className='flex justify-evenely mt-10'>
         {/* <div className='flex justify-evenly mt-10'> */}
           {sells.map(sell => (
             <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200 '>
