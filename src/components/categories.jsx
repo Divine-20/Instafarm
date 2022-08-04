@@ -75,6 +75,7 @@ function Categories(props) {
         <i className='text-4xl text-gray-200 pr-4 pt-48'><FaArrowCircleLeft /></i>
         
         {featured.map(features=>(
+             
      <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200'>
           <img src={features.src} alt="reddish" />
           <p className='text-xs pl-8 text-[#D4D4D4]'>{features.type}</p>

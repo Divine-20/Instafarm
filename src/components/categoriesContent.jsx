@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Categories from './categories';
 import reddish from '../images/reddish.png'
 import potatoes from '../images/potatoes.png'
@@ -9,6 +9,11 @@ import beans from '../images/beans.png'
 import tomatoes from '../images/tomatoes.png'
 
 function CategoriesContent() {
+  const[state,setState] = useState({
+    translate:0,
+    transition:0.45
+  })
+  const {translate,transition} = state;
 
   const featured = [{
     src: reddish,
@@ -58,7 +63,12 @@ function CategoriesContent() {
 ]
   return (
     <div>
-      <Categories featured ={featured} />
+      <Categories featured ={featured} 
+
+          translate={translate}
+          transition={transition}
+         
+      />
     </div>
   )
 }
