@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { FaArrowCircleLeft,FaArrowCircleRight,FaStar,FaShoppingCart } from 'react-icons/fa'
 import Slider from 'react-slick'
 import peaches from '../images/peaches.png'
@@ -14,6 +14,10 @@ import reddish from '../images/reddish.png'
 function Categories(props) {
 
     const {featured} = props;
+    const[state,setState] = useState({
+      translate:0,
+      transition:0.45
+    })
   return (
     <div>
         <div className='flex '>
