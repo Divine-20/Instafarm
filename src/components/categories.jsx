@@ -15,10 +15,47 @@ function Categories(props) {
 
     const {featured} = props;
     const[state,setState] = useState({
+      activeIndex: 0,
       translate:0,
       transition:0.45
+      
     })
-    const {translate,transition} = state
+    const {translate,transition,activeIndex} = state
+
+    const Arrow = ({direction,handleClick})=>(
+      onclick = {handleClick}
+)
+    const nextSlide = () => {
+      if (activeIndex === featured.length - 1) {
+        return setState({
+          ...state,
+          translate: 0,
+          activeIndex: 0
+        })
+      }
+  
+      setState({
+        ...state,
+        activeIndex: activeIndex + 1,
+        translate: (activeIndex + 1) * getWidth()
+      })
+    }
+  
+    const prevSlide = () => {
+      if (activeIndex === 0) {
+        return setState({
+          ...state,
+          translate: (featured.length - 1) * getWidth(),
+          activeIndex: featured.length - 1
+        })
+      }
+  
+      setState({
+        ...state,
+        activeIndex: activeIndex - 1,
+        translate: (activeIndex - 1) * getWidth()
+      })
+    }
   return (
     <div>
         <div className='flex '>
@@ -67,12 +104,12 @@ function Categories(props) {
               
             </div>
             {/* </Slider> */}
-            <i className='text-4xl text-gray-200 mt-28 ml-4 ' ><FaArrowCircleRight /></i>
+            <i className='text-4xl text-gray-200 mt-28 ml-4 '><FaArrowCircleRight /></i>
         </div>
        
         
         <div className='flex justify-center mt-6'>
-        <i className='text-4xl text-gray-200 pr-4 pt-48'><FaArrowCircleLeft /></i>
+        <i className='text-4xl text-gray-200 pr-4 pt-48' ><FaArrowCircleLeft direction="left" handleClick={prevSlide}  /></i>
         
         {featured.map(features=>(
              
@@ -97,7 +134,7 @@ function Categories(props) {
         
         ))}
        
-         <i className='text-4xl text-gray-200 mt-48  ' ><FaArrowCircleRight /></i>
+         <i className='text-4xl text-gray-200 mt-48  '><FaArrowCircleRight  direction="right" handleClick={nextSlide} /></i>
         </div>
     </div>
   )

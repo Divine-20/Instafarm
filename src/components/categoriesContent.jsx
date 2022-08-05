@@ -10,10 +10,11 @@ import tomatoes from '../images/tomatoes.png'
 
 function CategoriesContent() {
   const[state,setState] = useState({
+    activeIndex: 0,
     translate:0,
     transition:0.45
   })
-  const {translate,transition} = state;
+  const {translate,transition,activeIndex} = state;
 
   const featured = [{
     src: reddish,
@@ -59,7 +60,8 @@ function CategoriesContent() {
   owner:"Mr.food",
   dollars:"$2",
   amount:"$3.99"
-  }
+  
+}
 ]
   return (
     <div>
