@@ -76,8 +76,8 @@ function Categories(props) {
        
         
         <div className='flex justify-center mt-6'>
-        <i className='text-4xl text-gray-200 pr-4 pt-48' ><FaArrowCircleLeft direction="left" handleClick={prevSlide}  /></i>
-        
+        <i className='text-4xl text-gray-200 pr-4 pt-48' ><FaArrowCircleLeft /></i>
+        <Slider {...settings}>
         {featured.map(features=>(
              
      <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200'>
@@ -100,8 +100,8 @@ function Categories(props) {
          </div>
         
         ))}
-       
-         <i className='text-4xl text-gray-200 mt-48  '><FaArrowCircleRight  direction="right" handleClick={nextSlide} /></i>
+        </Slider>
+         <i className='text-4xl text-gray-200 mt-48  '><FaArrowCircleRight /></i>
         </div>
     </div>
   )
