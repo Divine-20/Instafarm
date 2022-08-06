@@ -15,10 +15,10 @@ function Categories(props) {
 
     const {featured} = props;
     const settings = {
-      dots: true,
+     
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1
     };
 
@@ -33,8 +33,8 @@ function Categories(props) {
         
         <div className=' ml-16 flex mt-8 '>
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
-        
-            <div className='h-auto pb-6 w-52 bg-[#FEEFEA]'>
+        <Slider {...settings}> 
+            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] fixed'>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
               <p className='text-center '>20 items</p>
@@ -70,17 +70,17 @@ function Categories(props) {
               <p className='text-center'>20 items</p>
               
             </div>
-            {/* </Slider> */}
+            </Slider>
             <i className='text-4xl text-gray-200 mt-28 ml-4 '><FaArrowCircleRight /></i>
         </div>
        
         
         <div className='flex justify-center mt-6'>
         <i className='text-4xl text-gray-200 pr-4 pt-48' ><FaArrowCircleLeft /></i>
-        <Slider {...settings}>
+        
         {featured.map(features=>(
-             
-     <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200'>
+            
+     <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200' id='slider'>
           <img src={features.src} alt="reddish" />
           <p className='text-xs pl-8 text-[#D4D4D4]'>{features.type}</p>
           <h1 className='pl-8 pt-2'>{features.name}</h1>
@@ -98,9 +98,9 @@ function Categories(props) {
          <button className='text-[#3BB77E] flex h-10 mt-2 pt-3 w-auto pl-4 pr-4 bg-[#DEF9EC]'><i className='text-[#3BB77E] pr-4'><FaShoppingCart /></i>Add</button>
          </div>
          </div>
-        
+       
         ))}
-        </Slider>
+       
          <i className='text-4xl text-gray-200 mt-48  '><FaArrowCircleRight /></i>
         </div>
     </div>
