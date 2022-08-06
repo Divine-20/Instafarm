@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { FaArrowCircleLeft,FaArrowCircleRight,FaStar,FaShoppingCart } from 'react-icons/fa'
-import Slider from 'react-slick'
+
 import peaches from '../images/peaches.png'
 import cabbage from '../images/cabbage.png'
 import strawberry from '../images/strawberry.png'
