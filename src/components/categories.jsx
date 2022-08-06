@@ -14,48 +14,7 @@ import reddish from '../images/reddish.png'
 function Categories(props) {
 
     const {featured} = props;
-    const[state,setState] = useState({
-      activeIndex: 0,
-      translate:0,
-      transition:0.45
-      
-    })
-    const {translate,transition,activeIndex} = state
-
-    const Arrow = ({direction,handleClick})=>(
-      onclick = {handleClick}
-)
-    const nextSlide = () => {
-      if (activeIndex === featured.length - 1) {
-        return setState({
-          ...state,
-          translate: 0,
-          activeIndex: 0
-        })
-      }
   
-      setState({
-        ...state,
-        activeIndex: activeIndex + 1,
-        translate: (activeIndex + 1) * getWidth()
-      })
-    }
-  
-    const prevSlide = () => {
-      if (activeIndex === 0) {
-        return setState({
-          ...state,
-          translate: (featured.length - 1) * getWidth(),
-          activeIndex: featured.length - 1
-        })
-      }
-  
-      setState({
-        ...state,
-        activeIndex: activeIndex - 1,
-        translate: (activeIndex - 1) * getWidth()
-      })
-    }
   return (
     <div>
         <div className='flex '>

@@ -67,8 +67,6 @@ function CategoriesContent() {
     <div>
       <Categories featured ={featured} 
 
-          translate={translate}
-          transition={transition}
          
       />
     </div>
