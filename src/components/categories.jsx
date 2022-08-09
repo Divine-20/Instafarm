@@ -72,7 +72,7 @@ function Categories(props) {
         
         <div className='flex justify-center mt-6'>
         <i className='text-4xl text-gray-200 pr-4 pt-48' ><FaArrowCircleLeft /></i>
-        <div className='flex w-[90%] overflow-x-auto'>
+        <div className='flex w-[90%] overflow-x-scroll overflow-hidden ' id='scrollable'>
         {featured.map(features=>(
             
      <div className='h-auto pb-8 w-80 mr-4  mt-10 border-solid border-[1px] border-gray-200' id='slider'>
