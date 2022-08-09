@@ -6,7 +6,7 @@ import Rectangle1 from '../images/Rectangle1.svg'
 function Sells(props) {
   const { sells } = props;
   return (
-    <div>
+    <div className=''>
       <div className='flex ml-36 mt-24'>
         <h1 className='text-3xl text-[#253D4E] font-bold pt-2'>Daily Best sells</h1>
         <div className='flex ml-36'>
@@ -22,8 +22,8 @@ function Sells(props) {
           <i className='text-4xl text-[#F2F3F4]'><FaArrowCircleRight /></i>
         </div>
       </div>
-      <div className='flex justify-evenely mt-10'>
-        {/* <div className='flex justify-evenly mt-10'> */}
+      <div className='flex justify-evenly mt-10'>
+       
           {sells.map(sell => (
             <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200 '>
               <button className='bg-[#FFD480] text-white w-auto pl-2 pr-2 h-8'>{sell.action}</button>
@@ -69,7 +69,7 @@ function Sells(props) {
           </div>
           </div>
           </div>
-        {/* </div> */}
+       
         </div>
         
         )

@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { FaArrowCircleLeft,FaArrowCircleRight,FaStar,FaShoppingCart } from 'react-icons/fa'
-import Slider from 'react-slick'
+
 import peaches from '../images/peaches.png'
 import cabbage from '../images/cabbage.png'
 import strawberry from '../images/strawberry.png'
@@ -14,13 +14,7 @@ import reddish from '../images/reddish.png'
 function Categories(props) {
 
     const {featured} = props;
-    const settings = {
-     
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1
-    };
+
 
   
   return (
@@ -31,10 +25,10 @@ function Categories(props) {
         </div>
        
         
-        <div className=' ml-16 flex mt-8 '>
+        <div className=' ml-16 flex mt-8 overflow-x-auto'>
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
-        <Slider {...settings}> 
-            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] fixed'>
+        
+            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] ml-4'>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
               <p className='text-center '>20 items</p>
@@ -70,17 +64,18 @@ function Categories(props) {
               <p className='text-center'>20 items</p>
               
             </div>
-            </Slider>
+            
+           
             <i className='text-4xl text-gray-200 mt-28 ml-4 '><FaArrowCircleRight /></i>
         </div>
        
         
         <div className='flex justify-center mt-6'>
         <i className='text-4xl text-gray-200 pr-4 pt-48' ><FaArrowCircleLeft /></i>
-        
+        <div className='flex w-[90%] overflow-x-auto'>
         {featured.map(features=>(
             
-     <div className='h-auto pb-8 w-64 mr-4  mt-10 border-solid border-[1px] border-gray-200' id='slider'>
+     <div className='h-auto pb-8 w-80 mr-4  mt-10 border-solid border-[1px] border-gray-200' id='slider'>
           <img src={features.src} alt="reddish" />
           <p className='text-xs pl-8 text-[#D4D4D4]'>{features.type}</p>
           <h1 className='pl-8 pt-2'>{features.name}</h1>
@@ -100,7 +95,7 @@ function Categories(props) {
          </div>
        
         ))}
-       
+       </div>
          <i className='text-4xl text-gray-200 mt-48  '><FaArrowCircleRight /></i>
         </div>
     </div>

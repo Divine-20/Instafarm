@@ -57,6 +57,30 @@ function CategoriesContent() {
   amount:"$3.99"
   
 }
+,{
+  src: cabbage,
+  type:"vegetables",
+  name:"Reddish 500g",
+  owner:"Mr.food",
+  dollars:"$2",
+  amount:"$3.99"
+  },{
+  src: beans,
+  type:"vegetables",
+  name:"Reddish 500g",
+  owner:"Mr.food",
+  dollars:"$2",
+  amount:"$3.99"
+  
+},{
+  src: tomatoes ,
+  type:"vegetables",
+  name:"Reddish 500g",
+  owner:"Mr.food",
+  dollars:"$2",
+  amount:"$3.99"
+  
+}
 ]
   return (
     <div>
