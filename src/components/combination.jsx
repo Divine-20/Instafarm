@@ -13,7 +13,7 @@ import SellsContent from './sellsContent'
 
 function Combination() {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
         <HeaderContent />
         <WelcomePage />
         <CategoriesContent />
