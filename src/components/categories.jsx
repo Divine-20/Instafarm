@@ -8,7 +8,7 @@ import apple from '../images/apple.png'
 import oranges from '../images/oranges.png'
 import irishpotatoes from '../images/irishpotatoes.png'
 import carrots from '../images/carrots.png'
-import reddish from '../images/reddish.png'
+// import reddish from '../images/reddish.png'
 
 
 function Categories(props) {
@@ -23,53 +23,86 @@ function Categories(props) {
             <h1 className='text-2xl text-[#253D4E] pl-32 pt-16'>Explore Categories</h1>
           
         </div>
+       {/* <div className='flex'> */}
+        
+        <div className='ml-16 flex '>
        
-        
-        <div className=' ml-16 flex mt-8 overflow-x-auto w-[88%] '>
         <i className='text-4xl text-gray-200 pr-4 pt-28'><FaArrowCircleLeft /></i>
-        
-            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] ml-4'>
+        <div className=' flex mt-8 overflow-x-auto'>
+            <div className='h-auto pb-6 w-[15vw] bg-[#FEEFEA] ml-4' id='one'>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
               <p className='text-center '>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#FFF3FF] ml-8'>
+            <div className='h-auto pb-6 w-[15vw] bg-[#FFF3FF] ml-8' id='one'>
             <img src={cabbage} alt="cabbage" className='mt-8' />
             <h1 className='text-center placeholder-violet-100 pt-10 '>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#F2FCE4] ml-8'>
+            <div className='h-auto pb-6 w-[15vw] bg-[#FFF3FF] ml-8' id='one'>
+            <img src={cabbage} alt="cabbage" className='mt-8' />
+            <h1 className='text-center placeholder-violet-100 pt-10 '>Peach</h1>
+              <p className='text-center'>20 items</p>
+            </div>
+            <div className='h-auto pb-6 w-[15vw] bg-[#F2FCE4] ml-8' id='one'>
             <img src={strawberry} alt="strawberry" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#FEEFEA] ml-8'>
+            <div className='h-auto pb-6 w-[15vw] bg-[#FEEFEA] ml-8' id='one'>
             <img src={apple} alt="apple" />
             <h1 className='text-center'>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#ECFFEC] ml-8'>
+            <div className='h-auto pb-6 w-[15vw] bg-[#ECFFEC] ml-8' id='one'>
             <img src={oranges} alt="oranges" />
             <h1 className='text-center'>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#FFFCEB] ml-8'>
+            <div className='h-auto pb-6 w-[15vw] bg-[#FFFCEB] ml-8' id='one'>
             <img src={irishpotatoes} alt="irishpotatoes" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
             </div>
-            <div className='h-auto pb-6 w-52 bg-[#DEF9EC] ml-8'>
+            <div className='h-auto pb-6 w-[15vw] bg-[#DEF9EC] ml-8' id='one'>
             <img src={carrots} alt="carrots" />
             <h1 className='text-center '>Peach</h1>
               <p className='text-center'>20 items</p>
               
             </div>
-            
-            
+            <div className='h-auto pb-6 w-[15vw] bg-[#DEF9EC] ml-8' id='one'>
+            <img src={carrots} alt="carrots" />
+            <h1 className='text-center '>Peach</h1>
+              <p className='text-center'>20 items</p>
+              
+            </div>
+            <div className='h-auto pb-6 w-[15vw] bg-[#ECFFEC] ml-8' id='one'>
+            <img src={oranges} alt="oranges" />
+            <h1 className='text-center'>Peach</h1>
+              <p className='text-center'>20 items</p>
+            </div>
+            <div className='h-auto pb-6 w-[15vw] bg-[#FFFCEB] ml-8' id='one'>
+            <img src={irishpotatoes} alt="irishpotatoes" />
+            <h1 className='text-center '>Peach</h1>
+              <p className='text-center'>20 items</p>
+            </div>
+            <div className='h-auto pb-6 w-[15vw] bg-[#DEF9EC] ml-8' id='one'>
+            <img src={carrots} alt="carrots" />
+            <h1 className='text-center '>Peach</h1>
+              <p className='text-center'>20 items</p>
+              
+            </div>
+            <div className='h-auto pb-6 w-[15vw] bg-[#DEF9EC] ml-8' id='one'>
+            <img src={carrots} alt="carrots" />
+            <h1 className='text-center '>Peach</h1>
+              <p className='text-center'>20 items</p>
+              
+            </div>
+            </div>
            
             <i className='text-4xl text-gray-200 mt-28 ml-4 '><FaArrowCircleRight /></i>
-        </div>
        
+            </div>
         
         <div className='flex justify-center mt-6'>
         <i className='text-4xl text-gray-200 pr-4 pt-48' ><FaArrowCircleLeft /></i>
