@@ -28,7 +28,7 @@ function Categories(props) {
         <div className='ml-16 flex '>
        
         <i className='text-4xl text-gray-200 pr-4 pt-40'><FaArrowCircleLeft /></i>
-        <div className=' flex mt-8 overflow-x-auto'>
+        <div className=' flex mt-8 overflow-x-auto w-[90%]' id='scrollable2'>
             <div className='h-auto pb-6 w-[15vw] bg-[#FEEFEA] ml-4' id='one'>
               <img src={peaches} alt="peaches" className='mt-8' />
               <h1 className='text-center pt-10 '>Peach</h1>
